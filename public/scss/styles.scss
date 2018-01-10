@@ -1,0 +1,120 @@
+@import "partials/_varsextendsmixins.scss";
+@import "partials/_reset.scss";
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+h1 {
+    font-size:2rem;
+    text-align: center;
+    margin:2rem 0;
+}
+.hide {
+    display:none;
+}
+h2 {
+    font-size:1.5rem;
+    text-align: center;
+    margin:1.25rem 0;
+
+    a {
+        display: block;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+.primary-layout h1 {
+    @extend .centerAbsolute;
+    text-transform: uppercase;
+}
+html {
+    height: 100%;
+    width:100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    height: 100%;
+    width:100%;
+    background-color: #cccccc;
+    color: $blueBlack;
+}
+form {
+    width:100%;
+}
+
+input {
+    border:0;
+}
+
+[type="submit"]{
+    width:100px;
+    padding:10px;
+    background-color: lightseagreen;
+    border-radius: 4px;
+    color: white;
+
+
+}
+
+.container {
+    padding:0 1rem;
+    @media #{$desktop} {
+        max-width:600px;
+        position: absolute;
+        left:50%;
+        top:50%;
+        transform: translate(-50%, -50%);
+
+	}
+    .card-heading {
+        margin:1rem 0;
+    }
+
+}
+
+.card-heading {
+    text-align: center;
+}
+
+.field-line {
+    width:100%;
+    margin-bottom:1rem;
+    display: flex;
+    justify-content: center;
+
+    input {
+        width:80%;
+        padding:3%;
+        border-bottom: 2px solid limegreen;
+        background-color: transparent;
+
+    }
+
+    ::placeholder {
+        text-align: center;
+    }
+}
+
+.actions {
+    a {
+        display: inline-block;
+        padding:0 1rem;
+        text-transform: uppercase;
+    }
+}
+
+p.loginname {
+    text-align: center;
+    font-size:1.25rem;
+    padding:2rem 0;
+
+}
+
+.errors {
+    color:red;
+    text-align: center;
+    padding:.35rem;
+}

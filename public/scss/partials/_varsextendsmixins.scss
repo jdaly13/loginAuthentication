@@ -1,0 +1,15 @@
+$blueBlack: #000120;
+
+
+$bigDesktop:"(min-width:1200px)";
+$mediumDesktop: "(min-width:992px)";
+$desktop: "(min-width: 768px)";
+$phonePlus: "(min-width:480px)";
+$biggerThanPhone: "(min-width: 580px)";
+
+.centerAbsolute {
+  position: absolute;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+}
