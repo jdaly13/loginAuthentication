@@ -33,9 +33,8 @@ There's also a 404 page for paths not related to ones above
 Authentication done via json web token and mongo has validation - password is hashed using bcrypt
 
 user needs to set up own mongodb account - I'm using mlab
-```
+
 module.exports = {
     mongo: {mongolink},
     jwtSecret : {whateveryouwant}
 };
-```
